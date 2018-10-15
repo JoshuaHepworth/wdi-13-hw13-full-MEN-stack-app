@@ -12,7 +12,9 @@ router.get('/', (req, res) => {
 	});
 });
 //new
-
+router.get('/new', (req, res) => {
+	res.render('new.ejs')
+})
 //create
 
 //show
