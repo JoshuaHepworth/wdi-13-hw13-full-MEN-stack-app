@@ -20,7 +20,9 @@ router.get('/new', (req, res) => {
 	res.render('new.ejs')
 })
 //create
-
+router.post('/', (req, res) => {
+	console.log(req.body)
+})
 //show
 
 //edit
