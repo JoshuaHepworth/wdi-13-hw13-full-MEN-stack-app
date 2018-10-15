@@ -18,6 +18,7 @@
   "homepage": "https://github.com/JoshuaHepworth/wdi-13-hw13-full-MEN-stack-app#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "method-override": "^3.0.0",
     "mongoose": "^5.3.3"
