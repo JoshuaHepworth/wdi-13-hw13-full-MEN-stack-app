@@ -4,15 +4,15 @@
 	<title></title>
 </head>
 <body>
-<h1>Index of Games</h1>
-
-<ul>
-	<%foundGames.forEach((game) => { %>
-	<li>
-		<form method="POST" action="/games/<%= game.id %>?_method=DELETE"><%=game.name%> <button>DELETE</button>
-		</form>
-	</li>
-	<%})%>
-</ul>
+	<h1>Game Index</h1>
+	<a href="/">Home</a>
+	<br>
+	<ul>
+		<%games.forEach((elem, i) => { %>
+			<li><a href="/games/<%=elem.id%>"><%=elem.name%></a></li>
+		<%})%>
+	</ul>
+	<br>
+	<a href="/games/new">Add game</a>
 </body>
 </html>

@@ -13,7 +13,7 @@ app.use(methodOverride('_method'))
 app.use('/games', gameController)
 
 app.get('/', (req, res) => {
-	res.send('Welcome to homepage! <a href="/games/new">Add Game</a>')
+	res.render('index.ejs')
 })
 
 

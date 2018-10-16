@@ -21,13 +21,15 @@ router.get('/new', (req, res) => {
 })
 //create
 router.post('/', (req, res) => {
-	console.log(req.body)
+	Game.create(req.body, (err, createdGame) => {
+
+	})
 })
 //show
 
 //edit
 
-//uodate
+//update
 
 //destroy
 
