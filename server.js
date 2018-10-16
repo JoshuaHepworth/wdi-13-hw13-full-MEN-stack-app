@@ -15,8 +15,8 @@ app.use('/games', gameController)
 
 
 app.get('/', (req, res) => {
-	// res.render('index.ejs')
-	res.send('Welcome to HomePage!')
+	res.send('Welcome!')
+	
 })
 
 
