@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1><%=game.name%></h1>
+	<br>
+	<%=game.name%> is available on <%=game.platform%>, and is rated <%=game.rated%>. 
+	<br>
+	<nav>
+		<ul>
+			<li><a href="/games/<%=game.id%>/edit">Edit</a></li>
+			<li><a href="/games/">Home</a></li>
+		</ul>	
+	</nav>
+</body>
+</html>
