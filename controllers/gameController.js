@@ -1,6 +1,6 @@
-const Game = require('../models/games.js');
 const express = require('express');
 const router = express.Router();
+const Game = require('../models/games.js');
 
 //index
 router.get('/', (req, res) => {
@@ -14,16 +14,10 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
 	res.render('new.ejs')
 })
-//create
-router.post('/', (req, res) => {
-	Game.create(req.body, (err, createdGame) => {
-
-	})
-})
 //show
 router.get('/:id', (req, res) => {
 	Game.findById(req.params.id, (err, foundGame) => {
-		res.render('games/show.ejs', {
+		res.render('show.ejs', {
 			game: foundGame
 		});
 	});
@@ -31,7 +25,7 @@ router.get('/:id', (req, res) => {
 //edit
 router.get('/:id/edit', (req, res) => {
 	Game.findById(req.params.id, (err, editGame) => {
-		res.render('games/edit.ejs', {
+		res.render('edit.ejs', {
 			game: editGame
 		});
 	});

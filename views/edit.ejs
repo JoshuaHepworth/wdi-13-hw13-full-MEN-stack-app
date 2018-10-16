@@ -9,7 +9,7 @@
 	<form action="/games/<%=game.id%>?_method=PUT" method="POST">
 		Name: <input type="text" name="name" value="<%=game.name%>"><br>
 		Platform: <input type="text" name="platform" value="<%=game.platformr%>"><br>
-		Rated: <input type="date" name="rated" value="<%=game.rated%>"><br>
+		Rated: <input type="text" name="rated" value="<%=game.rated%>"><br>
 		<input type="submit">
 	</form>
 	<form action="/games/<%=game.id%>?_method=DELETE" method="POST">
